@@ -8,6 +8,7 @@ var mutipart= require('connect-multiparty');
 
 var mutipartMiddeware = mutipart();
 var app = express();
+app.use(express.static('public'));
 //下面会修改临时文件的储存位置，如过没有会默认储存别的地方，这里不在详细描述,这个修改临时文件储存的位置 我在百度里查找了三四个小时才找到这个方法，不得不说nodejs真难学。
 //所以在这里留下我的学习记录，以备以后翻阅。
 
